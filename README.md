@@ -11,17 +11,19 @@ A skeleton of an amocrm widget example (https://developer.amocrm.com/widgets/) w
 
 #### 1. Requires Node and NPM [Download and install node.js](http://nodejs.org/download/).
 
-#### 2. Install gulp
+#### 2. Clone this repository
+
+#### 3. Install gulp
 
 See https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 
-#### 3. Install npm dependencies
+#### 4. Install npm dependencies
 
 ```sh
 $ npm install
 ```
 
-#### 4. Build
+#### 5. Build
 ```sh
 $ npm run build
 ```
