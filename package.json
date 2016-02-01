@@ -1,0 +1,62 @@
+{
+  "name": "amocrm-widget-starter-kit",
+  "version": "1.0.0",
+  "description": "AmoCrm widget build helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtratio/amocrm-widget-starter-kit.git"
+  },
+  "keywords": [
+    "crm",
+    "amocrm",
+    "kit",
+    "widget"
+  ],
+  "author": "xtratio <extremumratio@gmail.com> (https://github.com/xtratio)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xtratio/amocrm-widget-starter-kit/issues"
+  },
+  "homepage": "https://github.com/xtratio/amocrm-widget-starter-kit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-jsonlint": "^1.1.1",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-util": "^3.0.7",
+    "gulp-zip": "^3.1.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "jsonlint": "^1.6.2"
+  },
+  "jshintConfig":{
+    "globals": {
+      "define": false  
+    },
+    "esversion": 5,
+    "bitwise": true,
+    "browser": true,
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "immed": true,
+    "indent": 2,
+    "latedef": "nofunc",
+    "newcap": true,
+    "noarg": true,
+    "noempty": true,
+    "nonbsp": true,
+    "nonew": true,
+    "strict": false,
+    "globalstrict": "global",
+    "sub": true,
+    "supernew": true,
+    "undef": true,
+    "unused": true
+  }
+}

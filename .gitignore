@@ -1,0 +1,5 @@
+.vscode
+bower_components/
+node_modules/
+*.log
+*.zip

@@ -1,0 +1,12 @@
+{
+    "widget":{
+        "name":"Мой виджет",
+        "short_description":"Короткое описание виджета",
+        "description":"Полное описание виджета"
+    },
+    "settings":{
+        "login":"Логин",
+        "api_key":"ключ API",
+        "account":"Аккаунт"
+    }
+}
