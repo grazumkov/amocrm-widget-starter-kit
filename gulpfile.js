@@ -1,9 +1,10 @@
 "use strict";
 
 var gulp = require('gulp'),
-    util = require('gulp-util'),
+    gutil = require('gulp-util'),
     jshint = require('gulp-jshint'),
     jsonlint = require('gulp-jsonlint'),
+    csslint = require('gulp-csslint'),
     rimraf = require('gulp-rimraf'),
     zip = require('gulp-zip'),
     packageJSON  = require('./package');
@@ -33,14 +34,29 @@ gulp.task('jsonlint', function(){
             .pipe(jsonlint.reporter())
 });
 
-gulp.task('zip', ['clean', 'jslint', 'jsonlint'], function(){
+var cssLintReporter = function(file) {
+  gutil.log(gutil.colors.red(file.csslint.errorCount+' errors in ')+gutil.colors.cyan(file.path));
+
+  file.csslint.results.forEach(function(result) {
+    gutil.log('line '+result.error.line+', col '+result.error.col+', Error - '+result.error.message);
+  });
+};
+
+gulp.task('csslint', function(){
+   return gulp.src(path.src+'**/*.css')
+            .pipe(csslint())
+            .pipe(csslint.reporter(cssLintReporter))
+            .pipe(csslint.reporter('fail'))
+});
+
+gulp.task('zip', ['clean', 'jslint', 'jsonlint', 'csslint'], function(){
    return gulp.src(path.src+'**')
             .pipe(zip(zipFileName))
             .pipe(gulp.dest(path.dist))
 });
 
 gulp.task('build', ['zip'], function(){
-    util.log(util.colors.green('Successfull build: '), util.colors.cyan(path.dist+zipFileName));
+    gutil.log(gutil.colors.green('Successfull build: '), gutil.colors.cyan(path.dist+zipFileName));
 });
 
 gulp.task('default', ["build"]);
