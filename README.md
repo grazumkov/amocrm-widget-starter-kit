@@ -4,6 +4,7 @@ A skeleton of an amocrm widget example (https://developer.amocrm.com/widgets/) w
 ## Build script:
 * JSON validator - JSONLint
 * Javascript errors check - JSHint
+* CSS errors check - CSSLint
 * Create zip archive to publish
 * ...Other in progress...
 
