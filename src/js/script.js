@@ -1,4 +1,7 @@
 define(['jquery'], function($){
+	// gulp include example
+	//=require utils.js
+
     var CustomWidget = function () {
     	var widget = this,
             system = widget.system();

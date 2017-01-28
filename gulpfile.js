@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     jsonlint = require('gulp-jsonlint'),
     csslint = require('gulp-csslint'),
     zip = require('gulp-zip'),
+    include = require('gulp-include'),
     autoprefixer = require('gulp-autoprefixer'),
     del = require('del'),
     pkg  = require('./package');
@@ -34,6 +35,8 @@ gulp.task('jslint', ['clean'], function(){
 
 gulp.task('js', ['jslint'], function(){
    return gulp.src(path.src+"js/script.js")
+            .pipe(include())
+                .on('error', console.log)
             .pipe(gulp.dest(path.dist))
 });
 
