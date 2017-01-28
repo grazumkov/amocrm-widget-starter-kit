@@ -10,7 +10,10 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     strip = require('gulp-strip-comments'),
     del = require('del'),
-    pkg  = require('./package');
+    pkg  = require('./package'),
+    manifest  = require('./src/manifest'),
+    jmodify = require("gulp-json-modify"),
+    semver = require('semver');
 
 var path = {
         src: './src/',
@@ -61,6 +64,10 @@ gulp.task('manifest', ['clean'], function(){
             .pipe(jsonlint())
             .pipe(jsonlint.failOnError())
             .pipe(jsonlint.reporter())
+            .pipe(jmodify({
+                key: 'widget.version', value: semver.inc(manifest.widget.version, 'patch', null)
+            }))
+            .pipe(gulp.dest(path.src))
             .pipe(gulp.dest(path.dist))
 });
 

@@ -1,42 +1,42 @@
 {
-    "widget":{
-            "name": "widget.name",
-            "description": "widget.description",
-            "short_description": "widget.short_description",
-            "code": "xtratio_mywidget",
-            "secret_key": "1535e67c709408fab94ae09707c5e9202f8e60d7cd7ada60bc2ee9afbe61ace2",
-            "version": "1.0.1",
-            "interface_version": 2,
-            "init_once": false,
-            "locale":[
-                    "ru",
-                    "en"
-                    ],
-            "installation": true
-            },
-    "locations":[
-            "comcard-1",
-            "ccard-1",
-            "clist-0",
-            "lcard-1",
-            "llist-0",
-            "settings"
-            ],
-    "settings":{
-                "login":{
-                        "name": "settings.login",
-                        "type": "text",
-                        "required": true
-                        },
-                "api_key":{
-                        "name": "settings.api_key",
-                        "type": "text",
-                        "required": true
-                        },
-                "account":{
-                        "name": "settings.account",
-                        "type": "text",
-                        "required": true
-                        }
-            }
+    "widget": {
+        "name": "widget.name",
+        "description": "widget.description",
+        "short_description": "widget.short_description",
+        "code": "xtratio_mywidget",
+        "secret_key": "1535e67c709408fab94ae09707c5e9202f8e60d7cd7ada60bc2ee9afbe61ace2",
+        "version": "1.0.2",
+        "interface_version": 2,
+        "init_once": false,
+        "locale": [
+            "ru",
+            "en"
+        ],
+        "installation": true
+    },
+    "locations": [
+        "comcard-1",
+        "ccard-1",
+        "clist-0",
+        "lcard-1",
+        "llist-0",
+        "settings"
+    ],
+    "settings": {
+        "login": {
+            "name": "settings.login",
+            "type": "text",
+            "required": true
+        },
+        "api_key": {
+            "name": "settings.api_key",
+            "type": "text",
+            "required": true
+        },
+        "account": {
+            "name": "settings.account",
+            "type": "text",
+            "required": true
+        }
+    }
 }
