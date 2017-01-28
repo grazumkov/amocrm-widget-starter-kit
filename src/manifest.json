@@ -15,6 +15,7 @@
             "installation": true
             },
     "locations":[
+            "comcard-1",
             "ccard-1",
             "clist-0",
             "lcard-1",

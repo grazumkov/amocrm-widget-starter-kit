@@ -1,7 +1,8 @@
 define(['jquery'], function($){
     var CustomWidget = function () {
-    	var self = this;
-		this.callbacks = {
+    	var widget = this,
+            system = widget.system();
+				this.callbacks = {
 			render: function(){
 				console.log('render');
 				return true;
