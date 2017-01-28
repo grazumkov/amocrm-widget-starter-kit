@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     jsonlint = require('gulp-jsonlint'),
     csslint = require('gulp-csslint'),
     zip = require('gulp-zip'),
+    autoprefixer = require('gulp-autoprefixer'),
     del = require('del'),
     pkg  = require('./package');
 
@@ -65,6 +66,7 @@ gulp.task('css', ['clean'], function(){
    return gulp.src(path.src+'css/style.css')
             .pipe(csslint())
             .pipe(csslint.reporter(cssLintReporter))
+            .pipe(autoprefixer())
             .pipe(gulp.dest(path.dist))
             //.pipe(csslint.reporter('fail'))
 });
