@@ -28,6 +28,11 @@ gulp.task('img', ['clean'], function(){
             .pipe(gulp.dest(path.dist+"images/"))
 });
 
+gulp.task('templates', ['clean'], function(){
+   return gulp.src(path.src+"templates/**")
+            .pipe(gulp.dest(path.dist+"templates/"))
+});
+
 gulp.task('jslint', ['clean'], function(){
    return gulp.src(path.src+"js/*.js")
             .pipe(jshint(pkg.jshintConfig))
@@ -76,7 +81,7 @@ gulp.task('css', ['clean'], function(){
             //.pipe(csslint.reporter('fail'))
 });
 
-gulp.task('zip', ['js', 'i18n', 'manifest', 'css', 'img'], function(){
+gulp.task('zip', ['js', 'i18n', 'manifest', 'css', 'img', 'templates'], function(){
   return gulp.src(path.dist+'**/*.*')
             .pipe(zip(zipFileName))
             .pipe(gulp.dest(path.publish))

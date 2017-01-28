@@ -1,0 +1,3 @@
+<ul id="{{ id }}" class="model-items">
+    {% for item in items %}<li><a href="{{ item.url }}" data-action="{{ item.action }}" class="model-item" data-id="{{ item.id }}">{{ item.name }}</a></li>{% endfor %}
+</ul>

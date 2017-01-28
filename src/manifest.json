@@ -3,9 +3,9 @@
             "name": "widget.name",
             "description": "widget.description",
             "short_description": "widget.short_description",
-            "code": "mywidget",
-            "secret_key": "4d2009a01e3a0a3542609099fc9f5c370c37cc82cbd3dcdaf45420ba9d7e645b",
-            "version": "1.0.0",
+            "code": "xtratio_mywidget",
+            "secret_key": "1535e67c709408fab94ae09707c5e9202f8e60d7cd7ada60bc2ee9afbe61ace2",
+            "version": "1.0.1",
             "interface_version": 2,
             "init_once": false,
             "locale":[
