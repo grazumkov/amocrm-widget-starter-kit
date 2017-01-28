@@ -1,6 +1,6 @@
 {
   "name": "amocrm-widget-starter-kit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AmoCrm widget build helper",
   "main": "index.js",
   "scripts": {

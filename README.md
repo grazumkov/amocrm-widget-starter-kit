@@ -2,11 +2,14 @@
 A skeleton of an amocrm widget example (https://developer.amocrm.com/widgets/) with Gulp builder
 
 ## Build script:
+* JS files include (gulp-include)
+* Remove commets (required for publish)
+* Bump manifest version (required for load new version)
 * JSON validator - JSONLint
 * Javascript errors check - JSHint
+* CSS Autoprefixer
 * CSS errors check - CSSLint
 * Create zip archive to publish
-* ...Other in progress...
 
 ## Getting Started
 
