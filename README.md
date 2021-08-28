@@ -1,5 +1,5 @@
 # AmoCRM Widget Starter Kit
-A skeleton of an amocrm widget example (https://developer.amocrm.com/widgets/) with Gulp builder
+A skeleton of an amocrm widget example https://www.amocrm.ru/developers/content/api/widgets) with Gulp builder
 
 ## Build script:
 * JS files include (gulp-include)
